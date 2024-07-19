@@ -1,0 +1,30 @@
+@font-face {
+    font-family:'Vazir-Bold';
+    src: url(/font/Vazir-Bold.woff2),url(/font/Vazir-Bold.woff);
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --color-purple: #9381ff;
+    --color-light-purple: #f8f7ff;
+    --color-extra-light-purple: #b95cf4;
+    --color-light-Cream: #ffeedd;
+    --color-Cream: #ffd8be;
+    --color-black: #1a1a1a;
+    --color-white: #ffffff;
+  }
+  body {
+    font-family:'Iranian Sans';
+    background-color: var(--color-light-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  

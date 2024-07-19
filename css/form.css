@@ -1,0 +1,120 @@
+@import url(root.css);
+
+.container {
+  width: 95%;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Vazir-Bold";
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Vazir-Bold";
+  flex-wrap: wrap;
+  background-color: #e5d6ee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-bottom: 20px;
+}
+
+.form__title {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  background-color:var(--color-extra-light-purple);
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+}
+
+.form__control {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  direction: rtl;
+  padding: 18px 10px;
+}
+
+.form__control label {
+  width: 40%;
+  padding: 4px;
+}
+
+.form__control input {
+  width: 60%;
+  background-color: var(--color-light-purple);
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-width: 0 0 2px;
+  border-color: var(--color-extra-light-purple);
+}
+
+.form__control small {
+  visibility: hidden;
+  color: red;
+}
+
+.form__control.error input {
+  border-color: red;
+}
+
+.form__control.success input {
+  border-color: green;
+}
+
+button {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  background-color: var(--color-extra-light-purple);
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Vazir-Bold";
+}
+
+button:hover {
+  opacity: 0.7;
+  transition-duration: 1s;
+  background-color: #f8f7ff;
+  border-bottom: 2px solid var(--color-extra-light-purple);
+}
+
+@media screen and (min-width: 678px) {
+  body {
+    background-color: var(--color-light-purple);
+  }
+
+  .container {
+    width: 100%;
+    background-color: var(--color-light-purple);
+  }
+
+  #form {
+    padding: 30px;
+  }
+
+  .form__control label {
+    width: 30%;
+    padding: 4px;
+    text-align: center;
+  }
+
+  .form__control input {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 40%;
+  }
+}
